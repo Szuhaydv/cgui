@@ -19,9 +19,16 @@
                 </child>
                 <child>
                     <object class="GtkButton" id="button1">
-                        <property name="label">Button1</property>
                         <property name="height-request">124</property>
                         <property name="width-request">124</property>
+                        <child>
+                            <object class="GtkImage">
+                                <property name="file">assets/angry.png</property>
+                                <property name="pixel-size">64</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                            </object>
+                        </child>
                     </object>
                 </child>
             </object>
@@ -42,6 +49,14 @@
                         <property name="label">Button2</property>
                         <property name="height-request">124</property>
                         <property name="width-request">124</property>
+                        <child>
+                            <object class="GtkImage">
+                                <property name="file">assets/ok.png</property>
+                                <property name="pixel-size">64</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                            </object>
+                        </child>
                     </object>
                 </child>
             </object>
@@ -62,6 +77,14 @@
                         <property name="label">Button3</property>
                         <property name="height-request">124</property>
                         <property name="width-request">124</property>
+                        <child>
+                            <object class="GtkImage">
+                                <property name="file">assets/sad.png</property>
+                                <property name="pixel-size">64</property>
+                                <property name="halign">center</property>
+                                <property name="valign">center</property>
+                            </object>
+                        </child>
                     </object>
                 </child>
             </object>

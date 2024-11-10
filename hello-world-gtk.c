@@ -1,30 +1,26 @@
 #include <gtk/gtk.h>
+#include <stdio.h>
 
 void activate (GtkApplication *app, gpointer user_data) {
     GtkWidget *window;
     GtkWidget *container;
     GtkBuilder *builder;
     GtkCssProvider *provider;
+    GObject *buttons[7];
 
     window = gtk_application_window_new(app);
     gtk_window_set_title(GTK_WINDOW(window), "Habit Tracker");
     builder = gtk_builder_new_from_file("./app_layout.ui");
+    GtkIconTheme *theme = gtk_icon_theme_get_for_display(gdk_display_get_default());
+    gtk_icon_theme_add_resource_path(theme, "./assets");
 
-
-    GObject *button1 = gtk_builder_get_object(builder, "button1");
-    GObject *button2 = gtk_builder_get_object(builder, "button2");
-    GObject *button3 = gtk_builder_get_object(builder, "button3");
-    GObject *button4 = gtk_builder_get_object(builder, "button4");
-    GObject *button5 = gtk_builder_get_object(builder, "button5");
-    GObject *button6 = gtk_builder_get_object(builder, "button6");
-    GObject *button7 = gtk_builder_get_object(builder, "button7");
-    gtk_widget_add_css_class(GTK_WIDGET(button1), "button1");
-    gtk_widget_add_css_class(GTK_WIDGET(button2), "button2");
-    gtk_widget_add_css_class(GTK_WIDGET(button3), "button3");
-    gtk_widget_add_css_class(GTK_WIDGET(button4), "button4");
-    gtk_widget_add_css_class(GTK_WIDGET(button5), "button5");
-    gtk_widget_add_css_class(GTK_WIDGET(button6), "button6");
-    gtk_widget_add_css_class(GTK_WIDGET(button7), "button7");
+    for (int i = 0; i < 7; i++) {
+        char buttonString[8];
+        sprintf(buttonString, "button%d", i + 1);
+        printf("%s", buttonString);
+        buttons[i] = gtk_builder_get_object(builder, buttonString);
+        gtk_widget_add_css_class(GTK_WIDGET(buttons[i]), buttonString);
+    }
 
     provider = gtk_css_provider_new();
     gtk_css_provider_load_from_path(provider, "./styles.css");
