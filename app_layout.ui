@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+    <requires lib="gtk" version="4.0"/>
+    <object class="GtkBox" id="main_box">
+        <property name="orientation">horizontal</property>
+        <property name="spacing">20</property>
+        <property name="vexpand">false</property>
+        <property name="valign">start</property>
+        <child>
+            <object class="GtkBox" id="box1">
+                <property name="orientation">vertical</property>
+                <property name="spacing">16</property>
+                <child>
+                    <object class="GtkLabel" id="label1">
+                        <property name="label">Monday</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button1">
+                        <property name="label">Button1</property>
+                        <property name="height-request">124</property>
+                        <property name="width-request">124</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="box2">
+                <property name="orientation">vertical</property>
+                <property name="spacing">16</property>
+                <child>
+                    <object class="GtkLabel" id="label2">
+                        <property name="label">Tuesday</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button2">
+                        <property name="label">Button2</property>
+                        <property name="height-request">124</property>
+                        <property name="width-request">124</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="box3">
+                <property name="orientation">vertical</property>
+                <property name="spacing">16</property>
+                <child>
+                    <object class="GtkLabel" id="label3">
+                        <property name="label">Wednesday</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button3">
+                        <property name="label">Button3</property>
+                        <property name="height-request">124</property>
+                        <property name="width-request">124</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="box4">
+                <property name="orientation">vertical</property>
+                <property name="spacing">16</property>
+                <child>
+                    <object class="GtkLabel" id="label4">
+                        <property name="label">Thursday</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button4">
+                        <property name="label">Button4</property>
+                        <property name="height-request">124</property>
+                        <property name="width-request">124</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="box5">
+                <property name="orientation">vertical</property>
+                <property name="spacing">16</property>
+                <child>
+                    <object class="GtkLabel" id="label5">
+                        <property name="label">Friday</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button5">
+                        <property name="label">Button5</property>
+                        <property name="height-request">124</property>
+                        <property name="width-request">124</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="box6">
+                <property name="orientation">vertical</property>
+                <property name="spacing">16</property>
+                <child>
+                    <object class="GtkLabel" id="label6">
+                        <property name="label">Saturday</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button6">
+                        <property name="label">Button6</property>
+                        <property name="height-request">124</property>
+                        <property name="width-request">124</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+        <child>
+            <object class="GtkBox" id="box7">
+                <property name="orientation">vertical</property>
+                <property name="spacing">16</property>
+                <child>
+                    <object class="GtkLabel" id="label7">
+                        <property name="label">Sunday</property>
+                        <property name="halign">center</property>
+                        <property name="valign">center</property>
+                    </object>
+                </child>
+                <child>
+                    <object class="GtkButton" id="button7">
+                        <property name="label">Button7</property>
+                        <property name="height-request">124</property>
+                        <property name="width-request">124</property>
+                    </object>
+                </child>
+            </object>
+        </child>
+    </object>
+</interface>
